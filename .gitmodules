@@ -1,0 +1,3 @@
+[submodule "projects/senhor-drink"]
+	path = projects/senhor-drink
+	url = https://github.com/M3T4Z0D/senhor-drink.git
