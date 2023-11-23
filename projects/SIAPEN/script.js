@@ -3,9 +3,8 @@ const background = document.querySelector('body').style.backgroundImage;
 let sliders = [
     {number: 1, current: true}, 
     {number: 2, current: false},
-    {number: 6, current: false},
-    {number: 9, current: false}, 
-    {number: 11, current: false}
+    {number: 3, current: false},
+    {number: 4, current: false}
 ];
 
 const slidersSize = sliders.length - 1
