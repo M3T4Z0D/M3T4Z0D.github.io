@@ -168,7 +168,7 @@ input:focus {
   opacity: 1;
 }
 .floating-label input:valid:not(:placeholder-shown) + label + .icon svg path {
-  fill: rgb(182, 157, 230);
+  fill: var(--success-color);
 }
 .floating-label input:not(:valid):not(:focus) + label + .icon {
   animation-name: shake-shake;
