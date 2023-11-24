@@ -7,15 +7,22 @@
   --third-color: #dfdfdf;
   --success-color: #379750;
 }
+html {
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
 
-html, body {
+body {
   height: 100dvh;
   width: 100vw;
   margin: 0 0;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   background: black;
+  padding-bottom: 50px;
 }
 
 h4 {
@@ -198,7 +205,7 @@ input:focus {
 .session {
   display: flex;
   flex-direction: row;
-  width: auto;
+  width: 660px;
   height: 300px;
   margin: auto auto;
   background: var(--main-bg-color);
@@ -207,21 +214,51 @@ input:focus {
   animation: ease-in;
   animation-duration: 1s;
 }
+.log-in {
+  height: 340px;
+}
 
 .left {
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 400px;
   background-color: var(--third-color);
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .left img {
-  object-fit: cover;
+  width: 50%;
   height: auto;
   margin: 1rem;
+}
+
+span.policiaPenal {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.siapenText {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  height: 100%;
+  display: flex;
+}
+
+.siapenDescricao {
+  margin-top: 2rem;
+  align-self: center;
+  width: 100%;
+}
+
+.siapenText span {
+  font-weight: 800;
+  align-self: flex-end;
 }
 
 body { 
@@ -229,4 +266,26 @@ body {
   background-size: cover;
   transition: width 2s;
   transition-timing-function: ease-in-out;
+}
+
+.sessionFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sessionFooter {
+  justify-self: flex-end;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0a0b0d; /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto */
+  text-align: center;
+  padding: 10px 0; /* Espaçamento interno do rodapé */
+  font-size: 14px;
 }
